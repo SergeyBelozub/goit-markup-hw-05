@@ -32,12 +32,14 @@
           <nav class="navigation">
             <ul class="style-nav">
               <li class="header-item studio">
-                <a href="" class="studio link">Студия</a>
+                <a href="" class="studio link underscore">Студия</a>
               </li>
               <li class="header-item portfolio">
-                <a href="./portfolio.html" class="link">Портфолио</a>
+                <a href="./portfolio.html" class="link underscore">Портфолио</a>
               </li>
-              <li class="contact"><a href="" class="link">Контакты</a></li>
+              <li class="contact">
+                <a href="" class="link underscore">Контакты</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -68,7 +70,9 @@
           <h1 lang="ru" class="hero-title">
             эффективное решение для вашего бизнеса
           </h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -135,7 +139,13 @@
           <h2 class="content-subject">Чем мы занимаемся</h2>
           <ul class="content-item">
             <li class="content-subitem">
-              <img src="./images/boxone.jpg" alt="работает на пк" width="370" />
+              <img
+                class="content-img"
+                src="./images/boxone.jpg"
+                alt="работает на пк"
+                width="370"
+              />
+              <p class="content-lable">Десктопные приложения</p>
             </li>
             <li class="content-subitem">
               <img
@@ -143,6 +153,7 @@
                 alt="тестирует моб.приложения"
                 width="370"
               />
+              <p class="content-lable">Мобильные приложения</p>
             </li>
             <li class="content-subitem">
               <img
@@ -150,6 +161,7 @@
                 alt="работает с палитрой цветов"
                 width="370"
               />
+              <p class="content-lable">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -190,7 +202,10 @@
                   <li class="team-icon-list">
                     <a href="" class="team-icon-link">
                       <svg class="team-icon-sublink" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use
+                          class="team-svg"
+                          href="./images/icons.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -444,8 +459,19 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close <svg  width="18" height="18">
-          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></button>
+        <button
+          type="button"
+          class="modal-close"
+          data-modal-close
+        
+        </button>
+        <svg
+          class="modal-item"
+          width="18"
+          height="18"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
       </div>
     </div>
     <script src="./js/modal.js"></script>
